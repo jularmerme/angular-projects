@@ -1,0 +1,111 @@
+/*
+  Welcome section
+*/
+#tmWelcome {
+  background-image: url(/assets/img/mini-profile-bg-01.jpg);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.tm-brand-container-outer {
+  margin-top: -400px;
+}
+
+.tm-brand-container-inner {
+  max-width: 580px;
+  width: 100%;
+}
+
+.tm-brand-container {
+  padding: 75px 110px;
+}
+
+.tm-brand-name {
+  font-size: 3.8rem;
+}
+
+.tm-brand-description {
+  font-size: 1.4rem;
+}
+
+.parallax-window {
+  min-height: 1100px;
+  background: transparent;
+}
+
+#tmContact {
+  background-image: url(/assets/img/mini-profile-bg-02.jpg);
+  background-size: cover;
+  min-height: 1197px;
+}
+
+.tm-welcome-container {
+  min-height: 400px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+.tm-welcome-title {
+  margin-bottom: 40px;
+}
+
+.tm-welcome-left {
+  padding-right: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.tm-welcome-left-col {
+  display: flex;
+  align-items: center;
+}
+
+.tm-welcome-right {
+  color: white;
+  background-color: #986665;
+  padding: 90px 43px 70px;
+  height: 100%;
+}
+
+.tm-welcome-icons {
+  display: block;
+  margin: 15px 30px 10px;
+}
+
+.tm-welcome-icon {
+  margin-bottom: 1.5rem;
+  display: inline;
+  margin: 10px;
+}
+
+.tm-welcome-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.tm-welcome-link:hover {
+  color: #98cb00;
+}
+
+@media (max-width: 572px) {
+  .tm-brand-container {
+    padding: 45px;
+  }
+}
+
+@media (max-width: 443px) {
+  .tm-brand-name {
+    font-size: 3rem;
+  }
+
+  .tm-brand-container {
+    padding: 25px;
+  }
+}
