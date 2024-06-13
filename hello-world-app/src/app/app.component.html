@@ -1,0 +1,123 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col text-center">
+      <h3>Data Binding or Interpolation</h3>
+      <h3 class="d-block p-2 bg-primary text-white">
+        Hola mi nombre es {{ name }}
+      </h3>
+
+      <p class="d-block p-2 bg-dark text-white">
+        La suma de 10 + 15 = {{ 10 + 15 }}
+      </p>
+      <input
+        type="text"
+        name=""
+        id=""
+        [placeholder]="placeholderText"
+        class="form-control"
+        [disabled]="disabled"
+      />
+      <h3>Property or One Way Binding</h3>
+      <img [src]="imgSrc" alt="" width="400px" height="400px" />
+    </div>
+  </div>
+</div>
+
+<div class="container mt-3">
+  <div class="row">
+    <div class="col text-center">
+      <h3>Event Binding</h3>
+      <button class="btn btn-primary" (click)="changeText()">Click Me</button>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-3">
+  <div class="row">
+    <div class="col">
+      <h3>Two-Way Data Binding</h3>
+      <input
+        type="text"
+        name=""
+        id=""
+        class="form-control"
+        placeholder="type something here..."
+        [(ngModel)]="text"
+      />
+      <p class="mt-2">
+        Here will appear what you're typing in the input field => {{ text }}
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-3">
+  <div class="row mb-2">
+    <div class="col-md-10">
+      <h3 class="d-inline p-2">Student List</h3>
+    </div>
+    <div class="col-md-2">
+      <button class="btn btn-primary d-inline p-2" (click)="toogleTable()">
+        Show/Hide Table
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col" *ngIf="show">
+      <table class="table">
+        <thead>
+          <th>Number</th>
+          <th>Name</th>
+          <th>State</th>
+        </thead>
+        <tbody>
+          <tr
+            *ngFor="let student of students; let i = index"
+            [ngSwitch]="student.state"
+          >
+            <td
+              [ngStyle]="{ 'font-style': i % 2 == 0 ? 'italic' : 'normal' }"
+              *ngSwitchCase="'Promoted'"
+              class="alert alert-success"
+            >
+              {{ i + 1 }}
+            </td>
+            <td
+              [ngStyle]="{ 'font-style': i % 2 == 0 ? 'italic' : 'normal' }"
+              *ngSwitchCase="'Regular'"
+              class="alert alert-secondary"
+            >
+              {{ i + 1 }}
+            </td>
+            <td
+              [ngStyle]="{ 'font-style': i % 2 == 0 ? 'italic' : 'normal' }"
+              *ngSwitchCase="'Free'"
+              class="alert alert-danger"
+            >
+              {{ i + 1 }}
+            </td>
+            <td>
+              {{ student.name }}
+            </td>
+            <td>
+              <span
+                [ngClass]="
+                  student.state == 'Promoted'
+                    ? 'badge badge-success'
+                    : 'badge badge-secondary'
+                "
+                >{{ student.state }}</span
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3
+        *ngIf="students.length == 0"
+        class="border border-danger rounded text-center p-2 m-2"
+      >
+        The are not results to display
+      </h3>
+    </div>
+  </div>
+</div>
