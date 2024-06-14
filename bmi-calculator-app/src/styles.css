@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #e0ffff;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  margin-top: 25px;
+  border: 1px solid #b14aed;
+  background-color: #3b3355;
+  border-radius: 15px;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #e0ffff;
+}
+
+.row {
+  margin-top: 20px;
+}
+
+.btn-color {
+  background-color: #3b3355;
+  border-color: #3b3355;
+  border-radius: 25px;
+  width: 100%;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+/*
+light-cyan: #e0ffff
+back: #000505
+space-cadet: #3B3355
+ultra-violet: #5D5D81
+electric-purple: #B14AED
+*/

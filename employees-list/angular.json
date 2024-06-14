@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "bmi-calculator-app": {
+    "employees-list": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/bmi-calculator-app",
+            "outputPath": "dist/employees-list",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "bmi-calculator-app:build:production"
+              "browserTarget": "employees-list:build:production"
             },
             "development": {
-              "browserTarget": "bmi-calculator-app:build:development"
+              "browserTarget": "employees-list:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "bmi-calculator-app:build"
+            "browserTarget": "employees-list:build"
           }
         },
         "test": {

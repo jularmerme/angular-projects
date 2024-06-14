@@ -1,0 +1,58 @@
+.bg-item {
+  background-color: #5d5d81;
+  height: 130px;
+  border: 1px solid #b14aed;
+  border-radius: 20px;
+  color: #e0ffff;
+}
+
+.btn-color {
+  background-color: #5d5d81;
+  color: #e0ffff;
+  border-color: #5d5d81;
+  border-radius: 25px;
+  width: 100%;
+}
+
+.btn-color:hover {
+  background-color: #b14aed;
+  color: #e0ffff;
+  border-color: #b14aed;
+}
+
+.icon-size {
+  font-size: 50px;
+}
+
+.height-input {
+  font-size: 32px;
+  font-weight: 800;
+  margin-top: -25px;
+}
+
+.height-unit {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.custom-range {
+  padding: 0 30px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  background-color: #b14aed;
+}
+
+.icon-style {
+  cursor: pointer;
+  background-color: #b14aed;
+  padding: 7px;
+  border: 1px solid #b14aed;
+  border-radius: 15px;
+  margin: 0 10px;
+}
+
+.disabled-option {
+  background-color: #5d5d81;
+  opacity: 0.3;
+}

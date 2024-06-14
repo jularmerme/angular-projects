@@ -1,0 +1,99 @@
+<div class="row">
+  <div class="col-lg-4 offset-lg-4">
+    <h2 class="title">BMI Calculator</h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <div
+          class="bg-item"
+          [ngClass]="{ 'disabled-option': option == 'female' }"
+        >
+          <div class="icon-container">
+            <i
+              class="fas fa-mars icon-size"
+              style="cursor: pointer"
+              (click)="disableFemale()"
+            ></i>
+            <p>Male</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div
+          class="bg-item"
+          [ngClass]="{ 'disabled-option': option == 'male' }"
+        >
+          <div class="icon-container">
+            <i
+              class="fas fa-venus icon-size"
+              style="cursor: pointer"
+              (click)="disableMale()"
+            ></i>
+            <p>Female</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="bg-item">
+          <div class="icon-container">
+            <p>Height</p>
+            <p class="height-input">
+              {{ height }}<span class="height-unit">cms</span>
+            </p>
+            <input
+              type="range"
+              class="custom-range"
+              min="120"
+              max="220"
+              [value]="height"
+              (input)="updateHeight($event)"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="bg-item">
+          <div class="icon-container">
+            <p>Weigth</p>
+            <div class="height-input">{{ weigth }}</div>
+            <div>
+              <i
+                class="fas fa-minus icon-style"
+                (click)="weigth = weigth - 1"
+              ></i>
+              <i
+                class="fas fa-plus icon-style"
+                (click)="weigth = weigth + 1"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="bg-item">
+          <div class="icon-container">
+            <p>Age</p>
+            <div class="height-input">{{ age }}</div>
+            <div>
+              <i class="fas fa-minus icon-style" (click)="age = age - 1"></i>
+              <i class="fas fa-plus icon-style" (click)="age = age + 1"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <button
+          (click)="calculateBMI()"
+          class="btn btn-color btn-lg btn-block text-uppercase"
+        >
+          Calculate
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
