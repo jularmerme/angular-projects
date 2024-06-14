@@ -1,0 +1,56 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="form-group">
+        <label for="amount" class="text-light">Type currency amount</label>
+        <input
+          type="number"
+          name="currency-amount"
+          id="amount"
+          placeholder="Enter amount..."
+          class="form-control form-control-lg"
+          [(ngModel)]="amount"
+          (input)="convertCurrency()"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="form-group">
+        <label for="exampleFormControlSelect1" class="text-light">From:</label>
+        <select
+          class="form-control form-control-lg"
+          id="from-currency"
+          [(ngModel)]="fromCurrency"
+          (change)="convertCurrency()"
+        >
+          <option *ngFor="let currency of currencies">{{ currency }}</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="form-group">
+        <label for="exampleFormControlSelect1" class="text-light">To</label>
+        <select
+          class="form-control form-control-lg"
+          id="to-currency"
+          [(ngModel)]="toCurrency"
+          (change)="convertCurrency()"
+        >
+          <option *ngFor="let currency of currencies">{{ currency }}</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5" *ngIf="amount > 0">
+    <div
+      class="col-lg-6 text-center border border-success rounded offset-lg-3 shadow bg-light op"
+    >
+      <h3 class="p-3">Results</h3>
+      <p>${{ amount | number : "0.0-2" }} {{ fromCurrency }}</p>
+      <p>are</p>
+      <p>${{ converted | number : "0.0-2" }} {{ toCurrency }}</p>
+    </div>
+  </div>
+</div>
