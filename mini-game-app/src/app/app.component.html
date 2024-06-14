@@ -1,0 +1,9 @@
+<div class="jumbotron text-center">
+  <button class="btn btn-success btn-lg" (click)="play()">Play</button>
+  <br />
+  <img class="img" [src]="dice1" alt="" srcset="" />
+  <img class="img" [src]="dice2" alt="" srcset="" />
+  <h1 *ngIf="number1 === number2">
+    <span class="badge badge-success">It's a Match</span>
+  </h1>
+</div>
