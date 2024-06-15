@@ -1,0 +1,40 @@
+<div class="container mt-3">
+  <app-count-employee
+    [all]="getEmployeesTotal()"
+    [accounting]="getAccountingEmployees()"
+    [finances]="getFinanceEmployees()"
+    [it]="getITEmployees()"
+    (countRadioBtnChange)="employeeCountSelection($event)"
+  ></app-count-employee>
+  <div class="card mt-3">
+    <div class="card-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Lastname</th>
+            <th>Area</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <ng-container *ngFor="let employee of employeesList">
+            <tr
+              *ngIf="
+                optionSelected == 'all' ||
+                optionSelected == employee.area.toLowerCase()
+              "
+            >
+              <td>{{ employee.id }}</td>
+              <td>{{ employee.name }}</td>
+              <td>{{ employee.lastname }}</td>
+              <td>{{ employee.area }}</td>
+              <td>{{ employee.email }}</td>
+            </tr>
+          </ng-container>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

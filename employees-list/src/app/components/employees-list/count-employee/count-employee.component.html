@@ -1,0 +1,60 @@
+<div class="card">
+  <div class="card-body">
+    <div class="custom-control custom-radio custom-control-inline">
+      <input
+        type="radio"
+        id="customRadioInline1"
+        name="customRadioInline"
+        class="custom-control-input"
+        value="all"
+        [(ngModel)]="optionSelected"
+        (change)="radioChange()"
+      />
+      <label class="custom-control-label" for="customRadioInline1"
+        >All Areas({{ all }})</label
+      >
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input
+        type="radio"
+        id="customRadioInline2"
+        name="customRadioInline"
+        class="custom-control-input"
+        value="accounting"
+        [(ngModel)]="optionSelected"
+        (change)="radioChange()"
+      />
+      <label class="custom-control-label" for="customRadioInline2"
+        >Accounting({{ accounting }})</label
+      >
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input
+        type="radio"
+        id="customRadioInline3"
+        name="customRadioInline"
+        class="custom-control-input"
+        value="finances"
+        [(ngModel)]="optionSelected"
+        (change)="radioChange()"
+      />
+      <label class="custom-control-label" for="customRadioInline3"
+        >Finances({{ finances }})</label
+      >
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input
+        type="radio"
+        id="customRadioInline4"
+        name="customRadioInline"
+        class="custom-control-input"
+        value="it"
+        [(ngModel)]="optionSelected"
+        (change)="radioChange()"
+      />
+      <label class="custom-control-label" for="customRadioInline4"
+        >IT({{ it }})</label
+      >
+    </div>
+  </div>
+</div>
