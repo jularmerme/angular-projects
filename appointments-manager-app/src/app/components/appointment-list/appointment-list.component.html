@@ -1,0 +1,21 @@
+<div class="card bg-light">
+  <div class="card-body">
+    <h5 class="card-title text-center">Appointment List</h5>
+    <div class="text-center">
+      <span class="badge bg-success text-white p-2" *ngIf="allAppointments == 0"
+        >There is not any appointment at this time</span
+      >
+    </div>
+    <div class="card mb-2" *ngFor="let app of allAppointments; let i = index">
+      <div class="card-body">
+        <p class="card-text"><span>Name: </span>{{ app.name }}</p>
+        <p class="card-text"><span>Date: </span>{{ app.date }}</p>
+        <p class="card-text"><span>Time: </span>{{ app.time }}</p>
+        <p class="card-text"><span>Description: </span>{{ app.description }}</p>
+        <button class="btn btn-danger btn-block" (click)="deleteAppointment(i)">
+          Remove
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
