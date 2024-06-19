@@ -1,0 +1,164 @@
+<div class="container text-center">
+  <div class="btn btn-primary mb-5 shadow border" (click)="downloadFile()">
+    Download PDF Resume
+  </div>
+  <div class="pb-2">
+    <accordion [isAnimated]="true" class="shadow">
+      <accordion-group [(isOpen)]="isWorkExperienceOpen">
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
+          <div style="visibility: hidden">></div>
+          <div class="btn-link">Work Experience</div>
+          <div style="width: 10.95">
+            <div *ngIf="!isWorkExperienceOpen" style="color: white">+</div>
+            <div *ngIf="isWorkExperienceOpen" style="color: white">-</div>
+          </div>
+        </button>
+        <div style="text-align: left">
+          <h2 class="mb-0">Software Engineer</h2>
+          <h3 class="text-primary">Sample Company</h3>
+          <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li>Urna id volutpat lacus laoreet.</li>
+            <li>Quisque id diam vel quam elementum.</li>
+            <li>
+              Tristique senectus et netus et malesuada fames ac turpis egestas.
+            </li>
+            <li>Tincidunt arcu non sodales neque.</li>
+          </ul>
+        </div>
+        <div style="text-align: left">
+          <h2 class="mb-0">Manager</h2>
+          <h3 class="text-primary">Warehouse</h3>
+          <ul>
+            <li>
+              Euismod elementum nisi quis eleifend quam adipiscing vitae proin.
+            </li>
+            <li>Mi bibendum neque egestas congue.</li>
+            <li>Imperdiet dui accumsan sit amet nulla facilisi morbi.</li>
+            <li>Dignissim cras tincidunt lobortis feugiat vivamus at augue.</li>
+            <li>
+              Blandit turpis cursus in hac habitasse platea dictumst quisque
+              sagittis.
+            </li>
+          </ul>
+        </div>
+        <div style="text-align: left">
+          <h2 class="mb-0">Warehouse Associate</h2>
+          <h3 class="text-primary">Warehouse</h3>
+          <ul>
+            <li>
+              Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt.
+            </li>
+            <li>
+              Ipsum dolor sit amet consectetur adipiscing elit pellentesque
+              habitant morbi.
+            </li>
+            <li>Dui nunc mattis enim ut tellus elementum sagittis vitae.</li>
+            <li>In pellentesque massa placerat duis ultricies.</li>
+            <li>Quam adipiscing vitae proin sagittis.</li>
+          </ul>
+        </div>
+      </accordion-group>
+      <accordion-group [(isOpen)]="isEducationOpen">
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
+          <div style="visibility: hidden">></div>
+          <div class="btn-link">Education</div>
+          <div style="width: 10.95">
+            <div *ngIf="!isEducationOpen" style="color: white">+</div>
+            <div *ngIf="isEducationOpen" style="color: white">-</div>
+          </div>
+        </button>
+        <div style="text-align: left">
+          <h2 class="mb-0">Bachelor's of Science in Computer Science</h2>
+          <h3 class="text-primary">Purdue University</h3>
+          <ul>
+            <li>
+              Condimentum vitae sapien pellentesque habitant morbi tristique
+              senectus et netus.
+            </li>
+            <li>Arcu cursus vitae congue mauris rhoncus.</li>
+            <li>Imperdiet dui accumsan sit amet nulla facilisi morbi.</li>
+          </ul>
+        </div>
+      </accordion-group>
+      <accordion-group [(isOpen)]="isCertificationOpen">
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
+          <div style="visibility: hidden">></div>
+          <div class="btn-link">Certifications</div>
+          <div style="width: 10.95">
+            <div *ngIf="!isCertificationOpen" style="color: white">+</div>
+            <div *ngIf="isCertificationOpen" style="color: white">-</div>
+          </div>
+        </button>
+        <div style="text-align: left">
+          <h3>Microsoft Azure Data Fundamentals (DP-900)</h3>
+          <ul>
+            <li>
+              Condimentum vitae sapien pellentesque habitant morbi tristique
+              senectus et netus.
+            </li>
+            <li>Arcu cursus vitae congue mauris rhoncus.</li>
+          </ul>
+          <h3>Google IT Support Specialist</h3>
+          <ul>
+            <li>
+              Condimentum vitae sapien pellentesque habitant morbi tristique
+              senectus et netus.
+            </li>
+            <li>Arcu cursus vitae congue mauris rhoncus.</li>
+          </ul>
+        </div>
+      </accordion-group>
+      <accordion-group [(isOpen)]="isSkillOpen">
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
+          <div style="visibility: hidden">></div>
+          <div class="btn-link">Skills</div>
+          <div style="width: 10.95">
+            <div *ngIf="!isSkillOpen" style="color: white">+</div>
+            <div *ngIf="isSkillOpen" style="color: white">-</div>
+          </div>
+        </button>
+        <div class="row" style="text-align: left">
+          <div class="col">
+            <h3>Programming Languages:</h3>
+            <ul>
+              <li>C#</li>
+              <li>Typescript</li>
+              <li>Python</li>
+              <li>Java</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Frameworks:</h3>
+            <ul>
+              <li>Angular#</li>
+              <li>React</li>
+              <li>ASP.NET</li>
+              <li>Node.js</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Other Skills:</h3>
+            <ul>
+              <li>source Control(GIT)</li>
+              <li>MVC Architecture</li>
+              <li>Agile Development</li>
+            </ul>
+          </div>
+        </div>
+      </accordion-group>
+    </accordion>
+  </div>
+</div>

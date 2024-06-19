@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+.container {
+  max-width: 1140px;
+}
+
+.tag {
+  border-radius: 25px;
+  padding: 0px 20px;
+  margin: 2px 5px;
+  height: 30px;
+  width: fit-content;
+  line-height: 30px;
+  font-size: 14px;
+  background-color: blue;
+  color: white;
+}

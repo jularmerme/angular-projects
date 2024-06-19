@@ -1,0 +1,23 @@
+<div class="card shadow text-center">
+  <img src="" class="card-img-top" alt="" />
+  <div class="card-body">
+    <h5 class="card-title">{{ project.title }}</h5>
+    <p class="card-text">
+      {{ project.summary }}
+    </p>
+    <button class="btn btn-primary" (click)="openProjectModal()">
+      View More
+    </button>
+  </div>
+  <div class="card-footer">
+    <div class="d-flex flex-wrap justify-content-center">
+      <div
+        class="tag"
+        *ngFor="let tag of project.tags"
+        [style.background-color]="tag.color"
+      >
+        {{ tag }}
+      </div>
+    </div>
+  </div>
+</div>
