@@ -1,0 +1,23 @@
+<div class="row mt-5">
+  <div class="col-lg-6 offset-lg-3">
+    <h2 class="text-center font-title">Enter Budget</h2>
+    <div class="card shadow border-primary">
+      <div class="card-body">
+        <div class="text-center mb-3" *ngIf="wrongAmount">
+          <span class="badge text-error bg-danger"
+            >The budget should be greater than 0</span
+          >
+        </div>
+        <input
+          type="number"
+          class="form-control form-control-lg"
+          placeholder="Enter your budget..."
+          [(ngModel)]="amount"
+        />
+        <button class="btn btn-secondary btn-block mt-3" (click)="addAmount()">
+          Accept
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

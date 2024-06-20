@@ -1,0 +1,28 @@
+<h4 class="text-center">Enter Expense</h4>
+<hr />
+<div class="text-center" *ngIf="wrongForm">
+  <span class="badge bg-danger text-error">{{ wrongText | uppercase }}</span>
+</div>
+<div class="form-group">
+  <label for="" class="">Spent</label>
+  <input
+    id="expense-description"
+    type="text"
+    class="form-control form-control-lg"
+    placeholder="Enter expense description"
+    [(ngModel)]="expenseName"
+  />
+  <div class="form-group mt-2">
+    <label for="" class="">Amount</label>
+    <input
+      id="expense-amount"
+      type="number"
+      class="form-control form-control-lg"
+      placeholder="Amount"
+      [(ngModel)]="amount"
+    />
+  </div>
+  <button class="btn btn-secondary btn-lg btn-block" (click)="addExpense()">
+    Save
+  </button>
+</div>

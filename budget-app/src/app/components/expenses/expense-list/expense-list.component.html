@@ -1,0 +1,29 @@
+<h4 class="text-center">Expenses List</h4>
+<hr />
+<div class="row">
+  <div class="col-lg-6">
+    <div class="alert alert-success size-alert">
+      Budget: <strong>{{ budget | currency }}</strong>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="size-alert" [ngClass]="changeColor()">
+      Available: <strong>{{ available | currency }}</strong>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <ul class="list-group list-group-flush">
+      <li
+        class="list-group-item d-flex justify-content-between"
+        *ngFor="let e of expensesList"
+      >
+        <strong class="">{{ e.name }}</strong>
+        <span class="badge rounded-pill bg-info">{{
+          e.amount | currency
+        }}</span>
+      </li>
+    </ul>
+  </div>
+</div>
