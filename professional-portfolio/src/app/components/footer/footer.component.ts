@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.css',
 })
 export class FooterComponent {
-  footerCopyright = ' Julian Mercado | Copyright 2024';
+  footerCopyright = ' Julian Mercado Portfolio | Copyright 2024';
 }

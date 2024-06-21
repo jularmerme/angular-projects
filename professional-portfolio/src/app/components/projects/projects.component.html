@@ -1,117 +1,508 @@
 <!-- Portfolio section -->
-<section id="tmPortfolio">
-  <div class="container-fluid">
+<section id="portfolio">
+  <div class="container">
     <div class="row">
-      <div class="col-12">
-        <h2 class="h2 mb-5">Some Projects</h2>
-
-        <div class="tm-portfolio-item">
-          <div class="fadein">
-            <img
-              src="assets/img/woodfordreserveCover.png"
-              alt=""
-              srcset=""
-              class="tm-project-screenshot img-fluid"
-            />
-          </div>
-          <div class="tm-portfolio-description">
-            <h3>
-              <a
-                href="https://www.woodfordreserve.com/"
-                class="tm-text-green"
-                target="_blank"
-                >Woodford Reserve</a
-              >
-              <span class="tm-title-small"></span>
-            </h3>
-            <p class="mb-0">
-              Nullam a tellus ultricies, ornare purus vel, porttitor massa.
-              Aliquam facilisis purus ac eros sollicidudin, in mollis neque
-              facilisis. Duis malesuada, mi non elementum malesuada.
-            </p>
-          </div>
-        </div>
-
-        <div class="tm-portfolio-item">
-          <div class="fadein">
-            <img
-              src="assets/img/bulfinchCover.png"
-              alt=""
-              srcset=""
-              class="tm-project-screenshot img-fluid"
-            />
-          </div>
-          <div class="tm-portfolio-description">
-            <h3>
-              <a
-                href="https://www.bulfinch.com/"
-                class="tm-text-orange"
-                target="_blank"
-                >Bulfinch</a
-              >
-              <span class="tm-title-small"></span>
-            </h3>
-            <p class="mb-0">
-              Phasellus ac nulla egestas, malesuada dolor quis, scelerisque
-              arcu. Morbi aliquam, nunc vel blandit mattis, sapien nisl
-              convallis sem, quis hendrerit nisl tellus in lectus. Proin at nibh
-              bibendum, tincidunt mauris sit amet, porta risus. Integer id
-              malesuada ligula.
-            </p>
+      <div class="d-flex align-items-start">
+        <div class="d-flex align-items-start">
+          <div
+            class="nav flex-column nav-pills me-3"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
+            <button
+              class="nav-link active bg-secondary text-light mt-1"
+              id="v-pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-home"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-home"
+              aria-selected="true"
+            >
+              Angular
+            </button>
+            <button
+              class="nav-link bg-secondary text-light mt-1"
+              id="v-pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-profile"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-profile"
+              aria-selected="false"
+            >
+              Tailwind
+            </button>
+            <button
+              class="nav-link bg-secondary text-light mt-1"
+              id="v-pills-messages-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-messages"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-messages"
+              aria-selected="false"
+            >
+              WordPress
+            </button>
           </div>
         </div>
+        <div class="tab-content" id="v-pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="v-pills-home"
+            role="tabpanel"
+            aria-labelledby="v-pills-home-tab"
+          >
+            <div class="row">
+              <div class="col-lg-4">
+                <div
+                  class="card border-secondary mb-3 shadow"
+                  style="max-width: 25rem"
+                >
+                  <div class="card-header text-center">
+                    Employees Management
+                  </div>
+                  <img
+                    src="assets/img/angular/employeesManagement.png"
+                    alt=""
+                    class="card-img-top"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <a
+                      href="https://basic-employees-list.netlify.app/"
+                      target="_blank"
+                      class="text-decoration-none text-info"
+                      >View On Live</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div
+                  class="card border-secondary mb-3 shadow"
+                  style="max-width: 25rem"
+                >
+                  <div class="card-header text-center">Budget App</div>
+                  <img
+                    src="assets/img/angular/budget-app.png"
+                    alt=""
+                    class="card-img-top"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <a
+                      href="https://jm-budget-manager-app.netlify.app"
+                      target="_blank"
+                      class="text-decoration-none text-info"
+                      >View On Live</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div
+                  class="card border-secondary mb-3 shadow"
+                  style="max-width: 25rem"
+                >
+                  <div class="card-header text-center">Currency Converter</div>
+                  <img
+                    src="assets/img/angular/currency-converter-basic.png"
+                    alt=""
+                    class="card-img-top"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <a
+                      href="https://currency-converter-basic.netlify.app/"
+                      target="_blank"
+                      class="text-decoration-none text-info"
+                      >View On Live</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <div
+                  class="card border-secondary mb-3 shadow"
+                  style="max-width: 25rem"
+                >
+                  <div class="card-header text-center">Appointment App</div>
+                  <img
+                    src="assets/img/angular/simple-appointment-creator-app.png"
+                    alt=""
+                    class="car-img-top"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <a
+                      href="https://simple-appointment-creator.netlify.app/"
+                      target="_blank"
+                      class="text-decoration-none text-info"
+                      >View On Live</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div
+                  class="card border-secondary mb-3 shadow"
+                  style="max-width: 25rem"
+                >
+                  <div class="card-header text-center">Task List</div>
+                  <img
+                    src="assets/img/angular/jm-wish-list-app.png"
+                    alt=""
+                    class="car-img-top"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <a
+                      href="https://jm-wish-list.netlify.app/"
+                      target="_blank"
+                      class="text-decoration-none text-info"
+                      >View On Live</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div
+                  class="card border-secondary mb-3 shadow"
+                  style="max-width: 25rem"
+                >
+                  <div class="card-header text-center">BMI Calculator</div>
+                  <img
+                    src="assets/img/angular/classic-bmi-calculator-app.png"
+                    alt=""
+                    class="car-img-top"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <a
+                      href="https://classic-bmi-calculator.netlify.app/"
+                      target="_blank"
+                      class="text-decoration-none text-info"
+                      >View On Live</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-profile"
+            role="tabpanel"
+            aria-labelledby="v-pills-profile-tab"
+          >
+            <div class="row mb-3">
+              <div class="col-lg-6">
+                <div class="card mb-3 shadow h-100" style="max-width: 540px">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="assets/img/tailwind_css/jm-grid-testimonials-app-opt.png"
+                        class="img-thumbnail rounded-start"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Testimonial Grid</h5>
+                        <p class="card-text">
+                          This is a wider card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                        <a
+                          href="https://jm-grid-testimonials.netlify.app/"
+                          class="btn btn-primary"
+                          target="_blank"
+                          >Visit Example</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card mb-3 shadow h-100" style="max-width: 540px">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="assets/img/tailwind_css/jm-loopstudios-tailwindcss-app.png"
+                        class="img-fluid rounded-start"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">LoopStudios</h5>
+                        <p class="card-text">
+                          This is a wider card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                        <a
+                          href="https://jm-loopstudios-tailwindcss.netlify.app/"
+                          class="btn btn-primary"
+                          target="_blank"
+                          >Visit Example</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-lg-6">
+                <div class="card mb-3 shadow h-100" style="max-width: 540px">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="assets/img/tailwind_css/jm-shortly-link-app.png"
+                        class="img-fluid rounded-start"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Shortly Link</h5>
+                        <p class="card-text">
+                          This is a wider card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                        <a
+                          href="https://jm-shortly-link.netlify.app/"
+                          class="btn btn-primary"
+                          target="_blank"
+                          >Visit Example</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card mb-3 shadow h-100" style="max-width: 540px">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="assets/img/tailwind_css/jm-clipboard-tailwindcss-app.png"
+                        class="img-fluid rounded-start"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Capstone Website</h5>
+                        <p class="card-text">
+                          This is a wider card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                        <a
+                          href="https://jm-first-tailwindcss-project.netlify.app/"
+                          class="btn btn-primary"
+                          target="_blank"
+                          >Visit Example</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-messages"
+            role="tabpanel"
+            aria-labelledby="v-pills-messages-tab"
+          >
+            <div class="row row-cols-1 row-cols-md-3 g-4 mb-2">
+              <div class="col">
+                <div class="card h-100 shadow">
+                  <img
+                    src="assets/img/wordpress/avidiaBankCover.png"
+                    class="card-img-top"
+                    alt="avidia_bank_screenshot"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Avidia Bank</h5>
+                    <p class="card-text">
+                      This completely custom WordPress website, built from the
+                      ground up, caters to your exact needs with unique pages,
+                      design theme, and detailed features.
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <a
+                      href="https://www.avidiabank.com/"
+                      class="text-muted text-decoration-none"
+                      target="_blank"
+                      >Visit Site</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 shadow">
+                  <img
+                    src="assets/img/wordpress/bulfinchCover.png"
+                    class="card-img-top"
+                    alt="bulfinch_screenshot"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Bulfinch</h5>
+                    <p class="card-text">
+                      This WordPress site boasts a bespoke theme, custom
+                      functionality, and tailored pages – all built from scratch
+                      to match the client requirements and espectations.
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <a
+                      href="https://www.bulfinch.com/"
+                      class="text-muted text-decoration-none"
+                      target="_blank"
+                      >Visit Site</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 shadow">
+                  <img
+                    src="assets/img/wordpress/musselmanHotelsCover.png"
+                    class="card-img-top"
+                    alt="musselman_hotels_screenshot"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Musselman Hotels</h5>
+                    <p class="card-text">
+                      Freedom meets functionality. This custom WordPress site
+                      uses intricate features, handcrafted pages, and a
+                      personalized theme to bring online presence to life.
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <a
+                      href="https://musselmanhotels.com/"
+                      class="text-muted text-decoration-none"
+                      target="_blank"
+                      >Visit Site</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <div class="tm-portfolio-item">
-          <div class="fadein">
-            <img
-              src="assets/img/musselmanHotelsCover.png"
-              alt=""
-              srcset=""
-              class="tm-project-screenshot img-fluid"
-            />
-          </div>
-          <div class="tm-portfolio-description">
-            <h3>
-              <a
-                href="https://musselmanhotels.com/"
-                class="tm-text-blue"
-                target="_blank"
-                >Musselman Hotels</a
-              >
-              <span class="tm-title-small"></span>
-            </h3>
-            <p class="mb-0">
-              Etiam porta est nisl, consectetur dapibus ante faucibus id. Nunc
-              ullamcorper a quam eget tincidunt. Proin vehicula mauris ipsum,
-              euismod dignissim dolor convallis ac.
-            </p>
-          </div>
-        </div>
-
-        <div class="tm-portfolio-item">
-          <div class="fadein">
-            <img
-              src="assets/img/avidiaBankCover.png"
-              alt=""
-              srcset=""
-              class="tm-project-screenshot img-fluid"
-            />
-          </div>
-          <div class="tm-portfolio-description">
-            <h3>
-              <a
-                href="https://www.avidiabank.com/"
-                class="tm-text-dark-gray"
-                target="_blank"
-                >Avidia Bank</a
-              >
-              <span class="tm-title-small"></span>
-            </h3>
-            <p class="mb-0">
-              Etiam porta est nisl, consectetur dapibus ante faucibus id. Nunc
-              ullamcorper a quam eget tincidunt. Proin vehicula mauris ipsum,
-              euismod dignissim dolor convallis ac.
-            </p>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
+              <div class="col">
+                <div class="card h-100 shadow">
+                  <img
+                    src="assets/img/wordpress/woodfordreserveCover.png"
+                    class="card-img-top"
+                    alt="woodford_reserve_screenshot"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Woodford Reserve</h5>
+                    <p class="card-text">
+                      This website was meticulously crafted using WordPress.
+                      Every aspect, from the custom theme and pages to the
+                      detailed features, was built from scratch to fulfill the
+                      client's specific needs.
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <a
+                      href="https://www.woodfordreserve.com/"
+                      class="text-muted text-decoration-none"
+                      target="_blank"
+                      >Visit Site</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 shadow">
+                  <img
+                    src="assets/img/wordpress/brainsell.png"
+                    class="card-img-top"
+                    alt="brainsell_screenshot"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Brainsell</h5>
+                    <p class="card-text">
+                      Unleashing the potential of WordPress, this website
+                      showcases a custom theme, intricate features via custom
+                      fields, and handcrafted pages – all designed to provide a
+                      user experience tailored to the client's vision.
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <a
+                      href="https://www.brainsell.com/"
+                      class="text-muted text-decoration-none"
+                      target="_blank"
+                      >Visit Site</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 shadow">
+                  <img
+                    src="assets/img/wordpress/orchard-tx.png"
+                    class="card-img-top"
+                    alt="orchard_tx_screenshot"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Orchard</h5>
+                    <p class="card-text">
+                      Built with WordPress as its foundation, this website
+                      boasts a unique look and functionality. Custom pages, a
+                      tailored theme, and the use of custom fields allowed for a
+                      website that perfectly reflects the client's requirements.
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <a
+                      href="https://www.orchard-tx.com/"
+                      class="text-muted text-decoration-none"
+                      target="_blank"
+                      >Visit Site</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

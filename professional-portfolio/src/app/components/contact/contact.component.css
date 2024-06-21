@@ -14,18 +14,7 @@
   margin: 20px;
 }
 
-$utilities: (
-    "opacity": (
-      property: opacity,
-      value: (
-        85: 0.85,
-      ),
-    ),
-  )
-  @media
-  (
-    max-width: 1054px,
-  ) {
+@media (max-width: 1054px,) {
   .tm-contact-item-icon {
     margin-bottom: 15px;
   }

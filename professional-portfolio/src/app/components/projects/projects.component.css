@@ -2,8 +2,12 @@
   Portfolio section
 */
 
-#tmPortfolio {
-  padding-top: 80px;
+#portfolio {
+  padding: 100px 0px;
+}
+
+.bg-light-brown {
+  background-color: #986665;
 }
 
 .tm-portfolio-item {
