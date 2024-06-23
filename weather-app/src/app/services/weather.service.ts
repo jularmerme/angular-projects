@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class WeatherService {
-  API_key = '726b7c861ceaf51f0729ba510756578d';
+  API_key = 'YOUR_API_KEY';
   base_url = `https://api.openweathermap.org/geo/1.0/direct?&limit=1&appid=`;
   lat = 0;
   long = 0;
