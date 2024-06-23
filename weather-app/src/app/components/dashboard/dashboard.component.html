@@ -1,0 +1,48 @@
+<div *ngIf="showError" class="alert alert-dismissible alert-danger">
+  <div class="text-center">
+    <strong
+      >Error trying to get the city forecast, please check the city</strong
+    >
+  </div>
+</div>
+<div class="container pt-4">
+  <div class="row">
+    <div class="col-lg-4">
+      <img
+        [src]="urlWeatherImage"
+        alt="weather_image"
+        width="300px"
+        height="300px"
+      />
+    </div>
+    <div class="col-lg-6">
+      <input
+        [(ngModel)]="city"
+        type="text"
+        name=""
+        id=""
+        class="form-control form-control-lg size"
+        placeholder="Enter City"
+      />
+      <button
+        class="btn btn-primary btn-lg btn-block mt-4 size"
+        [disabled]="city == ''"
+        (click)="getForecast()"
+      >
+        Get Info
+      </button>
+      <div *ngIf="loading" class="text-center mt-3">
+        <div class="spinner-grow text-primary" role="status"></div>
+        <div class="spinner-grow text-primary" role="status"></div>
+        <div class="spinner-grow text-primary" role="status"></div>
+      </div>
+      <div class="card mt-3">
+        <div *ngIf="query" class="card-body shadow">
+          <p><b>Temperature: </b>{{ temperature | number : "1.2-2" }}</p>
+          <p><b>Humedity: </b>{{ humedity }}</p>
+          <p><b>Weather: </b>{{ weather }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
